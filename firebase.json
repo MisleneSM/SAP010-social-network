@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "food-review-mislene",
     "public": "dist",
     "ignore": [
       "firebase.json",
