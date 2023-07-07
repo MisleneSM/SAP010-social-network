@@ -2,7 +2,7 @@
 
 # Social Network - Food Review
 
-   Acesse o projeto através do [Firebase Hosting](https://rede-social-2c0e4.firebaseapp.com/)
+   Acesse o projeto através do [Site](https://rede-social-2c0e4.firebaseapp.com/)
   </div>
 
 <div align="center">
