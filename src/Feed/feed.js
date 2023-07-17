@@ -81,14 +81,15 @@ export const feedUser = () => {
 
   // Função para abrir o modal
   function openModal() {
-    modal.style.display = 'block'; // Exibe o modal
+    modal.style.display = 'block';
   }
 
   // Função para fechar o modal
   function closeModal() {
-    modal.style.display = 'none'; // Oculta o modal
+    modal.style.display = 'none';
   }
 
+  // Evento para fechar o modal
   openPublishButton.addEventListener('click', openModal);
   closeButton.addEventListener('click', closeModal);
   window.addEventListener('click', (event) => {
@@ -96,7 +97,6 @@ export const feedUser = () => {
       closeModal();
     }
   });
-  // Esse trecho de código permite fechar o modal quando o usuário clica fora da área do modal.
 
   authStateChanged((user) => {
     if (user) {
@@ -180,7 +180,6 @@ async function publishPost() {
 
   const post = {
     description: postContent.value,
-    rating: 2,
     restaurantName: postLocation.value,
     userAvatar: userPhotoElement.src,
     userName: userNameElement.textContent,

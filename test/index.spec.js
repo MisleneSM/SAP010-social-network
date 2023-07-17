@@ -5,18 +5,17 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
   signOut,
-  // getAuth,
   updateProfile,
   onAuthStateChanged,
 } from 'firebase/auth';
 import {
   doc,
-  setDoc,
+  setDoc, 
   deleteDoc,
   addDoc,
   collection,
-  orderBy,
-  query,
+  orderBy, 
+  query, 
   onSnapshot,
 } from 'firebase/firestore';
 import {
@@ -43,7 +42,6 @@ const posts = [
     id: 'post1',
     data: () => ({
       description: 'Restaurante muito bom',
-      rating: 2,
       restaurantName: 'Oue',
       userAvatar: 'https://placekitten.com/50/50',
       userName: 'John Wicky',
@@ -90,9 +88,6 @@ describe('Firebase', () => {
   });
 
   describe('Teste newUser', () => {
-    afterEach(() => {
-      jest.clearAllMocks(); // Limpa todos os mocks após cada teste
-    });
     test('Criar novo usuario', async () => {
       const email = 'josédasilva@gmail.com';
       const senha = '123456';
@@ -102,6 +97,7 @@ describe('Firebase', () => {
       };
       createUserWithEmailAndPassword.mockResolvedValueOnce(mockUserCredential);
       await newUser(email, senha);
+
       expect(createUserWithEmailAndPassword)
         .toHaveBeenCalledWith(auth, email, senha);
       expect(updateProfile)
@@ -190,7 +186,6 @@ describe('Firebase', () => {
   });
 
   test('deve atualizar o post existente após edição', async () => {
-    // const collectionName = 'PostLikes';
     const id = 'post1';
     const post = {
       description: 'Restaurante muito bom',
