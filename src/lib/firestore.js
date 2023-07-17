@@ -10,33 +10,27 @@ import {
 } from 'firebase/firestore';
 import { db } from '../Firebase/instalfirebase';
 
-// função que atualiza a página do feed
+// função que atualiza a página do feed com base nas postagens e nos likes recebidos.
 const updateUI = (render, feedItems, likes) => {
-  // aqui eu vou transformar minha lista de postagens adicionando os likes de cada postagem
   const items = feedItems.map((item) => ({
-    // esses 3 pontinhos são chamados de spread, servem para copiar
-    // todas as propriedades de um objeto
     ...item,
-    // aqui eu crio uma nova propriedade chamada likes que recebe uma
-    // lista com todas as pessoas que deram like na postagem
     likes: likes.filter(({ postId }) => postId === item.id),
-  }));
 
-  // e então eu chamo essa função render que veio de parametro, para
-  // atualizar o html com a minha nova lista de items, com os likes
+  }));
   render(items);
 };
 
+// função para buscar os itens dos post's e likes
 export const getFeedItems = (renderItems) => {
-  // criadas essas duas novas variaveis, para guardar os posts e feeds para usar depois
   let feedItems = [];
   let likes = [];
 
+  // função para buscar os post's
   const feedPost = collection(db, 'Post');
   const q = query(feedPost, orderBy('createdAt', 'desc'));
 
+  // carrega os post's sem recarregar a página
   onSnapshot(q, (querySnapshot) => {
-    // limpa a variavel de posts para adicionar os itens novamente abaixo
     feedItems = [];
 
     querySnapshot.forEach((itemDoc) => {
@@ -45,23 +39,16 @@ export const getFeedItems = (renderItems) => {
         ...itemDoc.data(),
       };
 
-      // adiciona um a um os posts na variavel feedItems
       feedItems.push(item);
     });
 
-    // atualiza o HTML com base nas novas informações que vieram do firestore
-    // o primeiro paramentro é o que cria e coloca o html na página
-    // o segundo parametro são minhas postagens do feed
-    // o terceiro parametro é a lista de todos os likes na collection de likes do firestore
     updateUI(renderItems, feedItems, likes);
   });
 
-  // repete o que foi feito com as postagens, mas dessa vez com os
-  // likes presentes na collection de likes
+  // função para buscar os likes
   const postLikes = collection(db, 'PostLikes');
   const q2 = query(postLikes);
   onSnapshot(q2, (querySnapshot) => {
-    // limpa a variavel que tem todos os likes
     likes = [];
 
     querySnapshot.forEach((itemDoc) => {
@@ -70,12 +57,9 @@ export const getFeedItems = (renderItems) => {
         ...itemDoc.data(),
       };
 
-      // adiciona um a um os likes na variavel de lista de likes
       likes.push(item);
     });
 
-    // atualiza o HTML. Isso é importante, porque dessa forma se mudar um like, ou uma postagem
-    // ele vai atualizar automaticamente o site.
     updateUI(renderItems, feedItems, likes);
   });
 };
@@ -84,19 +68,11 @@ export const publish = async (post) => {
   await addDoc(collection(db, 'Post'), post);
 };
 
-// função de editar post
-
 export const editItem = async (id, post) => {
   const refDoc = doc(db, 'Post', id);
   await setDoc(refDoc, post);
 };
 
-// export const editItem = async (postId, post) => {
-//   await setDoc (doc(db, 'Post', postId), post);
-// };
-
-// usado set doc para gerarmos nosso proprio id ex:post1_user1..., se usasemos
-// o addDoc o firebase geraria aleatoriamente ex:fmrjavnmdfkjnv
 export const like = async (postId, userId) => {
   await setDoc(doc(db, 'PostLikes', `${postId}_${userId}`), { postId, userId });
 };

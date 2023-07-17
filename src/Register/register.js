@@ -42,7 +42,7 @@ export const registerUser = () => {
     if (!regexEmailRegister.test(email)) {
       return 'Por favor digite um e-mail';
     }
-    return ''; // Retorna uma string vazia se o email for válido
+    return '';
   };
 
   const validarRegisterSenha = (senha) => {
@@ -62,7 +62,7 @@ export const registerUser = () => {
 
   const registerLogin = () => {
     register.addEventListener('click', async (evento) => {
-      evento.preventDefault();
+      evento.preventDefault(); // evita que a página seja recarregada quando a função é clicada.
 
       const emailInputRegister = registerEmail.value;
       const passwordRegister = registerPassword.value;
@@ -72,7 +72,6 @@ export const registerUser = () => {
       const senhaErrorRegister = validarRegisterSenha(passwordRegister);
 
       if (nameErrorRegister || emailErrorRegister || senhaErrorRegister) {
-        // Se houver algum erro de nome ou email ou senha, exiba as mensagens de erro
         errorTxt.setAttribute('style', 'display: block');
         errorTxt.innerHTML = nameErrorRegister || emailErrorRegister || senhaErrorRegister;
       } else {
