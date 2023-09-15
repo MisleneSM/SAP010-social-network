@@ -29,7 +29,7 @@
 * [1. Resumo do Projeto](#1-Resumo_do_Projeto)
 * [2. Histórias de Usuários](#2-História_de_Usuários)
 * [3. Protótipo](#3-Protótipo)
-* [4. Teste de Usuabilidade](#4-Teste_de_Usuabilidade)
+* [4. Teste de Usabilidade](#4-Teste_de_Usabilidade)
 * [5. Testes Unitários](#5-Testes_Unitários)
 * [6. Objetivos alcançados](#6-Objetivos_Alcançados)
 * [7. Equipe do Projeto](#7-Equipe_do_Projeto)
