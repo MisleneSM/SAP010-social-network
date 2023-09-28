@@ -39,7 +39,7 @@ export const loginUser = () => {
 
   const validarEmail = (email) => {
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!regexEmail.test(email)) {
+    if (!regexEmail.test(email)) { // test faz a busca entre uma expressão regular e uma string.
       return 'Formato de e-mail inválido';
     }
     return '';
@@ -52,6 +52,7 @@ export const loginUser = () => {
     return '';
   };
 
+  // função para usuário fazer login
   const fazerLogin = () => {
     login.addEventListener('click', async (event) => {
       event.preventDefault();
@@ -80,6 +81,7 @@ export const loginUser = () => {
 
   fazerLogin();
 
+  // login google
   const loginGoogle = () => {
     btnGoogle.addEventListener('click', () => {
       authLoginGoogle()
