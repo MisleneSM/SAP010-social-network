@@ -29,10 +29,10 @@
 * [1. Resumo do projeto](#1-resumo-do-projeto)
 * [2. Histórias de usuários](#2-histórias-de-usuários)
 * [3. Protótipo](#3-protótipo)
-* [4. Teste de Usabilidade](#4-teste-de-usabilidade)
-* [5. Testes Unitários](#5-testes-unitários)
+* [4. Teste de usabilidade](#4-teste-de-usabilidade)
+* [5. Testes unitários](#5-testes-unitários)
 * [6. Objetivos alcançados](#6-objetivos-alcançados)
-* [7. Equipe do Projeto](#7-equipe-do-Projeto)
+* [7. Equipe do projeto](#7-equipe-do-Projeto)
 
 ***
 
@@ -58,7 +58,7 @@ Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um 
 ![Desktop 1](src/Img/prototipo-web1.jpg)
 ![Desktop 2](src/Img/feed-desktop.png)
 
-## 4. Teste de Usabilidade:iphone:
+## 4. Teste de usabilidade:iphone:
 
  Os testes de usabilidade foram feitos com potenciais usuários ao longo do desenvolvimento do projeto. 
 
@@ -69,7 +69,7 @@ Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um 
  * Retirar a opção de login com o facebook, por apresentar problemas no momento de efetivar a autenticação de alguns usuários.
  * Inserir algum conteúdo que esclareça qual é o objetivo da nossa rede social.
 
-## 5. Testes Unitários:ok_hand:
+## 5. Testes unitários:ok_hand:
 
 Desenvolvemos testes unitários abrangendo as funcionalidades do Firebase e do Firestore. 
 
@@ -94,7 +94,7 @@ Desenvolvemos testes unitários abrangendo as funcionalidades do Firebase e do F
 * [:star:] Usuário pode editar e excluir as suas publicações;
 * [:star:] Posts são atualizados em tempo real.
 
-## 7. Equipe do Projeto:busts_in_silhouette:
+## 7. Equipe do projeto:busts_in_silhouette:
 
 <div align="center">
 Desenvolvido por:
