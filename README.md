@@ -2,7 +2,7 @@
 
 # Social Network - Food Review
 
-   Acesse o projeto através do [Firebase Hosting](https://rede-social-2c0e4.firebaseapp.com/)
+   Acesse o projeto através do [Site](https://food-review-mislene.web.app/)
   </div>
 
 <div align="center">
@@ -33,7 +33,6 @@
 * [5. Testes Unitários](#5-testes-unitários)
 * [6. Objetivos alcançados](#6-objetivos-alcançados)
 * [7. Equipe do Projeto](#7-equipe-do-Projeto)
-
 
 ***
 
