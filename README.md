@@ -40,11 +40,11 @@
 
 O Food Review é um website voltado para os amantes de lugares culinários, com intuito de trazer referências de restaurantes de vários tipos e gostos para os nossos usuários. Além disso, você terá a oportunidade de fazer suas próprias recomendações, interagir com publicações e posts, e expressar suas preferências. Neste projeto, foi desenvolvida uma SPA (Single Page Application) responsiva.
 
-## 2. Histórias de usuários:mag:
+## 2. Histórias de usuários📝
 
 ![Histórias de Usuários](src/Img/historias-usuarios.png)
 
-## 3. Protótipo:pen:
+## 3. Protótipo📝
 
 Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um tema moderno e sofisticado, escolhendo cores presentes na gastronomia.
 
@@ -58,7 +58,7 @@ Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um 
 ![Desktop 1](src/Img/prototipo-web1.jpg)
 ![Desktop 2](src/Img/feed-desktop.png)
 
-## 4. Teste de usabilidade:iphone:
+## 4. Teste de usabilidade✅
 
  Os testes de usabilidade foram feitos com potenciais usuários ao longo do desenvolvimento do projeto. 
 
@@ -69,13 +69,13 @@ Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um 
  * Retirar a opção de login com o facebook, por apresentar problemas no momento de efetivar a autenticação de alguns usuários.
  * Inserir algum conteúdo que esclareça qual é o objetivo da nossa rede social.
 
-## 5. Testes unitários:ok_hand:
+## 5. Testes unitários✅
 
 Desenvolvemos testes unitários abrangendo as funcionalidades do Firebase e do Firestore. 
 
 ![Testes Unitários](src/Img/testes-unitarios.png)
 
-## 6. Objetivos alcançados:white_check_mark:
+## 6. Objetivos alcançados✅
 
 * [:star:] construir uma Single-page Application (SPA) responsiva na qual seja possível ler e escrever dados;
 * [:star:] Criação dos testes unitários;
@@ -94,7 +94,7 @@ Desenvolvemos testes unitários abrangendo as funcionalidades do Firebase e do F
 * [:star:] Usuário pode editar e excluir as suas publicações;
 * [:star:] Posts são atualizados em tempo real.
 
-## 7. Equipe do projeto:busts_in_silhouette:
+## 7. Equipe do projeto🤩
 
 <div align="center">
 Desenvolvido por:
