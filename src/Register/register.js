@@ -42,7 +42,7 @@ export const registerUser = () => {
     if (!regexEmailRegister.test(email)) {
       return 'Por favor digite um e-mail';
     }
-    return '';
+    return ''; // Retorna uma string vazia se o email for válido
   };
 
   const validarRegisterSenha = (senha) => {
@@ -72,6 +72,7 @@ export const registerUser = () => {
       const senhaErrorRegister = validarRegisterSenha(passwordRegister);
 
       if (nameErrorRegister || emailErrorRegister || senhaErrorRegister) {
+        // Se houver algum erro de nome ou email ou senha, exiba as mensagens de erro
         errorTxt.setAttribute('style', 'display: block');
         errorTxt.innerHTML = nameErrorRegister || emailErrorRegister || senhaErrorRegister;
       } else {

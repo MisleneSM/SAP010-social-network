@@ -26,22 +26,21 @@
 
 ## Índice
 
-* [1. Resumo do Projeto](#1-Resumo_do_Projeto)
-* [2. Histórias de Usuários](#2-História_de_Usuários)
-* [3. Protótipo](#3-Protótipo)
-* [4. Teste de Usabilidade](#4-Teste_de_Usabilidade)
-* [5. Testes Unitários](#5-Testes_Unitários)
-* [6. Objetivos alcançados](#6-Objetivos_Alcançados)
-* [7. Equipe do Projeto](#7-Equipe_do_Projeto)
-
+* [1. Resumo do projeto](#1-resumo-do-projeto)
+* [2. Histórias de usuários](#2-histórias-de-usuários)
+* [3. Protótipo](#3-protótipo)
+* [4. Teste de Usabilidade](#4-teste-de-usabilidade)
+* [5. Testes Unitários](#5-testes-unitários)
+* [6. Objetivos alcançados](#6-objetivos-alcançados)
+* [7. Equipe do Projeto](#7-equipe-do-Projeto)
 
 ***
 
-## 1. Resumo do Projeto 📓
+## 1. Resumo do projeto 📓
 
 O Food Review é um website voltado para os amantes de lugares culinários, com intuito de trazer referências de restaurantes de vários tipos e gostos para os nossos usuários. Além disso, você terá a oportunidade de fazer suas próprias recomendações, interagir com publicações e posts, e expressar suas preferências. Neste projeto, foi desenvolvida uma SPA (Single Page Application) responsiva.
 
-## 2. Histórias de Usuários :mag:
+## 2. Histórias de usuários :mag:
 
 ![Histórias de Usuários](src/Img/historias-usuarios.png)
 
@@ -109,5 +108,5 @@ Desenvolvido por:
   <br>
   Roxane Príncipe<br>
   <a href="https://www.linkedin.com/in/roxaneprincipe/">Linkedin</a> | <a href="https://github.com/roxanevp">Github</a>
-  
+</div>
 

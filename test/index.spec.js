@@ -10,12 +10,12 @@ import {
 } from 'firebase/auth';
 import {
   doc,
-  setDoc, 
+  setDoc,
   deleteDoc,
   addDoc,
   collection,
-  orderBy, 
-  query, 
+  orderBy,
+  query,
   onSnapshot,
 } from 'firebase/firestore';
 import {
